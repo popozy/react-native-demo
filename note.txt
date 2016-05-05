@@ -1,0 +1,12 @@
+React vs. react native
+[ref:http://bbs.reactnative.cn/topic/14/react-native-%E6%8A%8A%E7%8E%B0%E4%BB%A3web%E7%A7%91%E6%8A%80%E5%B8%A6%E7%BB%99%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91%E8%80%85/2]
+react:
+1. js框架
+2. 长处：构建数据时刻变化的大型应用（不直接操作dom结构，virtual dom一层进行diff算法，找到并管理最快捷的更改dom结构的方法）；
+把应用划分为互不相关（耦合性低？）的组件，不同组件作为不同视图；
+React包装了复杂而易变的DOM API，改为提供一个声明式的结构，使得整个程序模型变得抽象而简单；
+3. 原理 virtual dom
+
+React native
+1. 性质：
+2. 目的：解决除web开发之外的移动端ios/android端的应用
