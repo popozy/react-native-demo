@@ -8,5 +8,11 @@ React包装了复杂而易变的DOM API，改为提供一个声明式的结构�
 3. 原理 virtual dom
 
 React native
-1. 性质：
+1. 性质：一个基于react并对不同平台的app源码做微笑调整的跨平台（iOS，android, browser)解决方案？
 2. 目的：解决除web开发之外的移动端ios/android端的应用
+3. 方法：a. webview b. 移植原生react到ios [ref:http://componentkit.org/]flex？ c.*js脚本封装原型api
+4. js脚本封装原型api
+  a. 问题：单线程阻塞，js放在主线程外的资源调度问题导致应用性能下降。
+  b. 解决思路：我们必须要改变一些基础层次的设计来确保我们的系统传递消息永远是异步的，这样我们就可以把这些消息以一定的单位来打包发送，来尽可能减少一些跨线程交互的开销。（引入react，所以react native基于react设计。b1.react是的diff算法是异步进行的？b2.异步操作dom结构，那页面样式问题处理也是react随着dom结构的改变也顺带完成了？b3.减少跨线程调度的开销也还是多线程的还是多线程的？）;
+5. 原生app中和web页面的区别：浏览器中用div和span渲染，移动端通过引入JavaScriptCore来运行Js，进行渲染（写法会有差别，安卓ios开发基础）
+
